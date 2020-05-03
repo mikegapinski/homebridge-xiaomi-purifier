@@ -186,9 +186,9 @@ MiAirPurifier.prototype = {
 					device.on('modeChanged', mode => {
 						logger.debug('mode changed to ' + mode);
 
-						// that.updateActiveState(mode);
+						that.updateActiveState(mode);
 						that.updateTargetAirPurifierState(mode);
-						// that.updateCurrentAirPurifierState(mode);
+						that.updateCurrentAirPurifierState(mode);
 					});
 
 					// Listen to power change event
